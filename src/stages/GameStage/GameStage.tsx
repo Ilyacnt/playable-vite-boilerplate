@@ -1,30 +1,13 @@
 import { StageBase } from '../StageBase.styled'
-import {
-    GameStageContainer,
-    GameStagePicture,
-    GameStageSubtitle,
-    GameStageTitle,
-} from './GameStage.styled'
+import { GameStageContainer } from './GameStage.styled'
+import picture1 from '../../assets/picture1.png'
 
 const GameStage = () => {
     return (
-        <StageBase background="#E60000">
+        <StageBase background="#464DFF">
             <GameStageContainer>
-                <GameStageTitle
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ repeat: 5, repeatDelay: 1000 }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    Проверь свой авто
-                </GameStageTitle>
-                <GameStagePicture>test</GameStagePicture>
-                <GameStageSubtitle
-                    animate={{ scale: [1, 1.1, 1] }}
-                    transition={{ repeat: 5, repeatDelay: 1000 }}
-                    whileTap={{ scale: 0.9 }}
-                >
-                    Geely Atlas Pro, 2023
-                </GameStageSubtitle>
+                <p>Your Playable Content Here</p>
+                <img src={picture1} />
             </GameStageContainer>
         </StageBase>
     )
