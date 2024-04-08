@@ -3,6 +3,8 @@ import { GameStageContainer } from './GameStage.styled'
 import picture1 from '../../assets/picture1.png'
 import { Button } from '../../components/Button/Button'
 import { Typography } from '../../components/Typography/Typography'
+import { EAnimationType } from '../../types'
+import { animationVariants } from '../../animations'
 
 type TGameStage = {
     setStage: (stage: number) => void
@@ -15,10 +17,12 @@ export const GameStage = ({ setStage }: TGameStage) => {
 
     return (
         <StageBase>
-            <GameStageContainer>
-                <Typography>Your Playable Content Here</Typography>
+            <GameStageContainer animate={EAnimationType.APPEARANCE} variants={animationVariants}>
+                <Typography animation={EAnimationType.PULSE}>Your Playable Content Here</Typography>
                 <img src={picture1} />
-                <Button onClick={changeStageHandle}>Go to EndStage</Button>
+                <Button animation={EAnimationType.PULSE} onClick={changeStageHandle}>
+                    Go to EndStage
+                </Button>
             </GameStageContainer>
         </StageBase>
     )

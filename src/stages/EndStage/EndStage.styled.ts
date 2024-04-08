@@ -1,6 +1,7 @@
+import { motion } from 'framer-motion'
 import styled from 'styled-components'
 
-export const EndStageContainer = styled.div`
+export const EndStageContainer = styled(motion.div)`
     display: flex;
     flex-direction: column;
     align-items: center;

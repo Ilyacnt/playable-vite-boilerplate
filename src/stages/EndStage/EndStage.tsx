@@ -1,5 +1,7 @@
+import { animationVariants } from '../../animations'
 import { Button } from '../../components/Button/Button'
 import { Typography } from '../../components/Typography/Typography'
+import { EAnimationType } from '../../types'
 import { StageBase } from '../StageBase.styled'
 import { EndStageContainer } from './EndStage.styled'
 
@@ -10,9 +12,11 @@ export const EndStage = () => {
 
     return (
         <StageBase>
-            <EndStageContainer>
+            <EndStageContainer animate={EAnimationType.APPEARANCE} variants={animationVariants}>
                 <Typography>You are on EndStage</Typography>
-                <Button onClick={clickCTAButtonHandle}>CTA Button</Button>
+                <Button animation={EAnimationType.PULSE} onClick={clickCTAButtonHandle}>
+                    CTA Button
+                </Button>
             </EndStageContainer>
         </StageBase>
     )
