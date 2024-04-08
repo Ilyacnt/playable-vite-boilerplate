@@ -9,7 +9,13 @@ export const GameStageContainer = styled.div`
 
     height: 100%;
 
-    & > img {
-        width: 90vmin;
+    img {
+        width: 80vmin;
+    }
+
+    @media (orientation: landscape) {
+        img {
+            width: 60vmin;
+        }
     }
 `

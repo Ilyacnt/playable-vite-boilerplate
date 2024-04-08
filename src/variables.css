@@ -1,0 +1,15 @@
+/* ✨ Setup or add your own styles variables here ✨ */
+
+:root {
+    --primary-color: #464dff;
+    --secondary-color: #b412f9;
+
+    --button-background: #ffffff;
+    --button-color: var(--primary-color);
+}
+
+html,
+body,
+button {
+    font-weight: bold;
+}

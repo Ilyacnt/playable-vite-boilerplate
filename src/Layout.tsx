@@ -1,15 +1,17 @@
 import { useState } from 'react'
-import GameStage from './stages/GameStage/GameStage'
-import { TStage } from './context/StageContext'
+import { GameStage } from './stages/GameStage/GameStage'
+import { EndStage } from './stages/EndStage/EndStage'
 
 function Layout() {
-    const [stage] = useState<TStage>({ currentStage: { stageId: 0 } })
+    const [stage, setStage] = useState<number>(0)
 
-    switch (stage.currentStage.stageId) {
+    switch (stage) {
         case 0:
-            return <GameStage />
+            return <GameStage setStage={setStage} />
+        case 1:
+            return <EndStage />
         default:
-            return <GameStage />
+            return <GameStage setStage={setStage} />
     }
 }
 
