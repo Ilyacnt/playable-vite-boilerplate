@@ -5,5 +5,5 @@ export const StageBase = styled.div<{ background?: string }>`
     height: 100vh;
     height: 100dvh;
 
-    background: ${(props) => props.background || css`var(--primary-color)`};
+    background: ${(props) => props.background || css`var(--stage-base-background)`};
 `
