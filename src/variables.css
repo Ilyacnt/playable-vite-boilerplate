@@ -1,17 +1,21 @@
 /* ✨ Setup or add your own styles variables here ✨ */
 
 :root {
-    --primary-color: #464dff;
-    --secondary-color: #b412f9;
+  /* color of text */
+  --primary-color: #000000;
+  /* color of main background */
+  --secondary-color: #ffe831;
+  /* some another brand color */
+  --tertiary-color: #684cd7;
 
-    --stage-base-background: var(--secondary-color);
+  --stage-base-background: var(--secondary-color);
 
-    --button-background: #ffffff;
-    --button-color: var(--primary-color);
+  --button-background: #ffffff;
+  --button-color: var(--primary-color);
 }
 
 html,
 body,
 button {
-    font-weight: bold;
+  font-weight: bold;
 }

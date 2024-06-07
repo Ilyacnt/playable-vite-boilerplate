@@ -1,6 +1,8 @@
-import { motion } from 'framer-motion'
-import styled from 'styled-components'
+import { motion } from "framer-motion";
+import styled from "styled-components";
 
 export const TypographyStyled = styled(motion.span)`
-    font-size: 5vmin;
-`
+  font-size: 5vmin;
+  text-align: center;
+  color: var(--primary-color);
+`;
